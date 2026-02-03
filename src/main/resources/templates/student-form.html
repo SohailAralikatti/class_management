@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <ul>
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="/record">Students</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <h2>Add Student</h2>
+
+    <!-- Student Form Start -->
+   <form action="/save-student" method="post" class="student-form">
+
+    <label>Student ID</label><br>
+    <input type="text" name="studentId" required><br><br>
+
+    <label>Student Name</label><br>
+    <input type="text" name="studentName" required><br><br>
+
+    <button type="submit" class="submit-btn">Submit</button>
+
+</form>
+
+    <!-- Student Form End -->
+</div>
+
+</body>
+</html>

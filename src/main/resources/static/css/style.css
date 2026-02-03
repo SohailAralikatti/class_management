@@ -1,0 +1,126 @@
+/* Remove default spacing */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #2c3e50;
+    padding: 10px;
+}
+
+/* Menu list */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Menu items */
+.navbar ul li {
+    margin-right: 20px;
+}
+
+/* Menu links */
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Page content */
+.content {
+    padding: 20px;
+}
+
+/* Student Records Display -Start */
+
+/* Student table border */
+.student-table {
+    width: 100%;
+    border: 2px solid #2c3e50;
+    border-collapse: collapse;
+}
+
+/* Table header and data cells */
+.student-table th,
+.student-table td {
+    border: 1px solid #2c3e50;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Table header background */
+.student-table th {
+    background-color: #ecf0f1;
+}
+
+/* Edit button */
+.edit-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.edit-btn:hover {
+    background-color: #2c80b4;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Student Records Display -End */
+
+/* add Student Form Start */
+
+.student-form {
+    width: 300px;
+    margin-top: 20px;
+}
+
+.student-form label {
+    font-weight: bold;
+}
+
+.student-form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.submit-btn:hover {
+    background-color: #219150;
+}
+
+/* add Student Form End */

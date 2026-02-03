@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Records</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<h1>Student Records</h1>
+<a href="/add-student">
+    <button class="add-btn">Add Student</button>
+</a>
+<table class="student-table">
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Modified Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tbody>
+<tr th:each="s : ${students}">
+    <td th:text="${s.studentId}"></td>
+    <td th:text="${s.studentName}"></td>
+    <td>
+        <a th:href="@{/edit-student/{id}(id=${s.studentId})}">
+    <button class="edit-btn">Edit</button>
+</a>
+        
+	</a>
+
+        
+        
+        <a th:href="@{/delete-student/{id}(id=${s.studentId})}">
+    <button class="delete-btn">Delete</button>
+</a>
+
+        
+    </td>
+</tr>
+</tbody>
+        
+    </tbody>
+</table>
+</body>
+</html>
